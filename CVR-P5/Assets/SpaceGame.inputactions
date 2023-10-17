@@ -1,0 +1,34 @@
+{
+    "name": "SpaceGame",
+    "maps": [
+        {
+            "name": "Flashlight",
+            "id": "beca0ee7-c88c-4d22-ab59-780a75c6cad8",
+            "actions": [
+                {
+                    "name": "Switch",
+                    "type": "Button",
+                    "id": "d267d653-342a-44c6-9128-01af1c5b1d85",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b43ec9c5-cd7d-4c94-85b8-e161d0261021",
+                    "path": "<XRSimulatedController>/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
