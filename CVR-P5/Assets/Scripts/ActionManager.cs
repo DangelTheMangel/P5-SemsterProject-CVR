@@ -4,19 +4,68 @@ using UnityEngine;
 
 public class ActionManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("actions")]
+    [SerializeField]
+    Action[] listOfActions;
+    [SerializeField]
+    int currentActionIndex = -1;
+    [SerializeField]
+    bool actionsActive = true;
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentActionIndex >= 0 && actionsActive) {
+            listOfActions[currentActionIndex].actionUpdate();
+        }
     }
 
-    public void runAction() {
-        Debug.Log("Action go bruuuur");
+    public void endAndStartNewActionWithSearch(string actionName)
+    {
+        for (int i = 0; i < listOfActions.Length; i++)
+        {
+            if (actionName == listOfActions[i].getActionName())
+            {
+                endAndStartNewAction(i);
+                break;
+            }
+        }
+    }
+    public void endAndStartNewAction(int actionIndex) {
+        endAction();
+        runAction(actionIndex);
+    }
+
+    public void endAction()
+    {
+        listOfActions[currentActionIndex].endAction();
+        disableAllActions();
+    }
+
+    public void disableAllActions() {
+        actionsActive = false;
+    }
+    public void enableAllActions()
+    {
+        actionsActive = true;
+    }
+    public void runActionWithSearch(string actionName) {
+        for (int i = 0; i < listOfActions.Length; i++) {
+            if (actionName == listOfActions[i].getActionName()) {
+                runAction(i);
+                break;
+            }
+        }
+    }
+
+    public void runAction(int actionIndex)
+    {
+        currentActionIndex = actionIndex;
+        listOfActions[currentActionIndex].startAction();
+        enableAllActions();
+    }
+
+    public void runNextAction() {
+        runAction(currentActionIndex+1);
     }
 }
