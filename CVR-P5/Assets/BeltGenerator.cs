@@ -7,7 +7,8 @@ using UnityEngine;
 public class BeltGenerator : MonoBehaviour
 {
     [Header("Spawner Settings")]
-    public GameObject cubePrefab;
+    public GameObject[] astroidPrefabs;
+    int startIndex = 0;
     public int density;
     public int seed;
     public float innerRadius;
@@ -56,9 +57,13 @@ public class BeltGenerator : MonoBehaviour
             worldPos = transform.position + worldOffset;
 
             // Instantiate an asteroid prefab with random rotation and add BeltObject component to it
-            GameObject asteroid = Instantiate(cubePrefab, worldPos, Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
+            GameObject asteroid = Instantiate(astroidPrefabs[startIndex], worldPos, Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
             asteroid.AddComponent<OrbitingObject>().SetupOrbitingObject(Random.Range(minOrbitSpeed, maxOrbitSpeed), Random.Range(minRotationSpeed, maxRotationSpeed), gameObject, isRotatingClockwise);
             asteroid.transform.SetParent(transform);
+            startIndex += 1;
+            if (startIndex >= astroidPrefabs.Length) { 
+                startIndex= 0;
+            }
         }
     }
 }
