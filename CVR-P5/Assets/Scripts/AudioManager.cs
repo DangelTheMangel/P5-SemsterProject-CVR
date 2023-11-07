@@ -5,6 +5,10 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
 
+    public Transform playerHead; //Assings your VR Camera angle here | Check Inspector
+    public AudioSource[] audioSources; //Can assing all our audio sources here
+    public float angleThreshold = 30f; // Angle threshold to hear the sound
+
     public Sound[] sounds;
 
     public static AudioManager instance;
@@ -35,6 +39,44 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
         }
     }
+
+
+    void Update()
+    {
+        // To get the direction the player is looking at
+        Vector3 lookDirection = playerHead.forward;
+
+        foreach (AudioSource source in audioSources)
+        {
+            // Calculates the direction from player to audio source
+            Vector3 toSource = (source.transform.position - playerHead.position).normalized; 
+
+            // Calculate angle between look direction and toSource direction
+            float angle = Vector3.Angle(lookDirection, toSource);
+
+            // If the angle is less than the threshold, and the audio source is not playing, play it
+            if (angle < angleThreshold)
+            {
+                if (!source.isPlaying)
+                {
+                    source.Play();
+                }
+            }
+            else
+            {
+                // Otherwise, stop the audio if it's playing
+                if (source.isPlaying)
+                {
+                    source.Stop();
+                }
+            }
+        }
+    }
+        
+
+
+
+    
 
     public void Play (string name)
     {
