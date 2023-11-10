@@ -2612,6 +2612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftHand
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c59891d8c88f7bf4bad166cc5f4cb9d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1392595203298398570, guid: c59891d8c88f7bf4bad166cc5f4cb9d7, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.81087816
@@ -3286,7 +3290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c59891d8c88f7bf4bad166cc5f4cb9d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.058
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c59891d8c88f7bf4bad166cc5f4cb9d7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3330,7 +3334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c59891d8c88f7bf4bad166cc5f4cb9d7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: c59891d8c88f7bf4bad166cc5f4cb9d7, type: 3}
       propertyPath: m_Controller
