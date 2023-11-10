@@ -1,0 +1,24 @@
+# Blender MTL File: 'Ship.blend'
+# Material Count: 2
+
+newmtl PMM_01
+Ns 250.214880
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.740909
+illum 9
+map_Kd International Space Station\\Textures\\PMM_01\\PMM_01_Base_Color.tga
+
+newmtl Panels
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd International Space Station\\Textures\\OuterPanels\\space_station_outer_panel_basecolor.tga
