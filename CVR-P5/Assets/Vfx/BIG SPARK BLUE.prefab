@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7954165, y: 0.12166265, z: -0.1701254, w: 0.56883055}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.17798, y: 0.17798, z: 0.17798}
+  m_LocalScale: {x: 0.002281204, y: 0.002281204, z: 0.002281204}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1097675270948983971}
@@ -42,7 +42,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136713784766009603}
   serializedVersion: 8
-  lengthInSec: 1
+  lengthInSec: 5.37
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -117,8 +117,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: 1
+      scalar: 0.7
+      minScalar: 1.4
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -170,7 +170,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 278.72
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -612,7 +612,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.21
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -877,8 +877,8 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0.017803192
-          value: 1
+          time: 0
+          value: 0.9934066
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -886,8 +886,8 @@ ParticleSystem:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.4925138
-          value: 0.06501067
+          time: 0.22534004
+          value: 0.051827073
           inSlope: -0.5475188
           outSlope: -0.5475188
           tangentMode: 0
@@ -895,8 +895,17 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
+          time: 0.47680822
+          value: 0.10655892
+          inSlope: 0.8856892
+          outSlope: 0.8856892
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
           time: 1
-          value: 1
+          value: 0.9714279
           inSlope: 2
           outSlope: 2
           tangentMode: 0
@@ -4928,7 +4937,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.469469e-39, z: 0, w: 1.469474e-39}
+  m_BoundingSphereOverride: {x: 0.0000010384073, y: 1.1697389, z: 1.02e-43, w: 4.9e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0

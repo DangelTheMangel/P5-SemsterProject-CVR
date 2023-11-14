@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 1614259907767564367}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7954165, y: 0.12166265, z: -0.1701254, w: 0.56883055}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5999985}
-  m_LocalScale: {x: 0.17798, y: 0.17798, z: 0.17798}
+  m_LocalPosition: {x: -0.127, y: -0.134, z: 0.03}
+  m_LocalScale: {x: 0.043968596, y: 0.043968596, z: 0.043968596}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4004996738734822458}
@@ -50,7 +50,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -117,8 +117,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: 1
+      scalar: 1.06
+      minScalar: 0.17
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -612,7 +612,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -671,9 +671,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Position: {x: -0.036266364, y: -0.006909987, z: 0.018800713}
+    m_Rotation: {x: 0.0021117886, y: 0.0021183775, z: -0.0013902236}
+    m_Scale: {x: 0.1426326, y: 0.1426326, z: 0.1426326}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -4928,7 +4928,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.469469e-39, z: 0, w: 1.469474e-39}
+  m_BoundingSphereOverride: {x: 1, y: 1e-45, z: 1.02e-43, w: 2.2e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
