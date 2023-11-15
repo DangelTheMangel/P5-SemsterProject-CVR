@@ -26854,9 +26854,9 @@ GameObject:
   - component: {fileID: 1192576556}
   - component: {fileID: 1192576559}
   - component: {fileID: 1192576558}
-  - component: {fileID: 1192576557}
   - component: {fileID: 1192576560}
   - component: {fileID: 1192576561}
+  - component: {fileID: 1192576562}
   m_Layer: 0
   m_Name: JPM_CollapsedForUnity.Airlock (1)
   m_TagString: Untagged
@@ -26879,28 +26879,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 543450652513718904}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -140.706}
---- !u!64 &1192576557
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192576555}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5727122197868763216, guid: a71c4a544e9c4b9478f136fa9399b567, type: 3}
 --- !u!23 &1192576558
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27002,6 +26980,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &1192576562
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192576555}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.017070927, y: 0.020562425, z: 0.01659054}
+  m_Center: {x: -0.00018208406, y: 0.038554728, z: -0.007568493}
 --- !u!1 &1196646434
 GameObject:
   m_ObjectHideFlags: 0
