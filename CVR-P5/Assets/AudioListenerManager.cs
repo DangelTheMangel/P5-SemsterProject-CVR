@@ -15,13 +15,15 @@ public class AudioListenerManager : MonoBehaviour
     [SerializeField]
     AudioClip[] MusicTracks;
     [SerializeField]
+    AudioSource musicPlayer;
+    [SerializeField]
     float hearingRange = 10;
     [SerializeField]
     Color hearingGizmoColor;
     // Start is called before the first frame update
     void Start()
     {
-        
+        musicPlayer= GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -47,6 +49,14 @@ public class AudioListenerManager : MonoBehaviour
                 aSources.enabled = false;
             }   
         }
+    }
+    public void stopMusic() {
+        musicPlayer.Stop();
+    }
+    
+    public void playMusic(int index) {
+        musicPlayer.clip = MusicTracks[index];
+        musicPlayer.Play();
     }
 
     void updateAudioSource(AudioSource aS) {
