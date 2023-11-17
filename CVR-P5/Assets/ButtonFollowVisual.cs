@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-
+/// <summary>
+/// Inspriede by : https://youtu.be/bts8VkDP_vU?si=wKe3-S7T5JHErEWw
+/// </summary>
 public class ButtonFollowVisual : MonoBehaviour
 {
     public Transform visualTarget;
@@ -10,14 +12,17 @@ public class ButtonFollowVisual : MonoBehaviour
     public float resetSpeed = 5;
     public float followAngleThreshold = 45;
 
+    [SerializeField]
     private bool freeze = false;
-
+    [SerializeField]
     private Vector3 initialLocalPos;
-
+    [SerializeField]
     private Vector3 offset;
+    [SerializeField]
     private Transform pokeAttachTransform;
-
+    [SerializeField]
     private XRBaseInteractable interactable;
+    [SerializeField]
     private bool isFollowing = false;
 
     // Start is called before the first frame update
