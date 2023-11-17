@@ -28,6 +28,7 @@ public class ActionManager : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        runActionSequence(actionSequenceIndex);
     }
     /// <summary>
     /// Update is called once per frame. Checks for active action and updates it.
