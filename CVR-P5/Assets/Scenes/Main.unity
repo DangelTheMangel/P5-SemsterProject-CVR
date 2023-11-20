@@ -12570,6 +12570,14 @@ PrefabInstance:
       value: -0.0331
       objectReference: {fileID: 0}
     - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 7b8a7f803d8284b099b120fdb2080bb1, type: 3}
@@ -13745,6 +13753,14 @@ PrefabInstance:
       value: -0.0339
       objectReference: {fileID: 0}
     - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 971215dd7206b4defb882f68ab5928dd, type: 3}
@@ -13883,7 +13899,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5800705
   m_Height: 1.160141
@@ -18787,6 +18803,14 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 99c448b1da6aa413dbc2ddd82e78a27c, type: 3}
@@ -21974,6 +21998,14 @@ PrefabInstance:
     - target: {fileID: 89493319184633544, guid: 412a005112228074c8d94687853ddeff, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.0322
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
       propertyPath: m_audioClip
@@ -53962,6 +53994,14 @@ PrefabInstance:
       value: -0.0354
       objectReference: {fileID: 0}
     - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526007523031046398, guid: 412a005112228074c8d94687853ddeff, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: eddb80ff5aa8e426c85849d8418e341d, type: 3}
@@ -58628,13 +58668,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4768970422599219754, guid: 8a4117b5101ea4da593ae178ca933b14, type: 3}
+      propertyPath: SFX_AudioSources.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768970422599219754, guid: 8a4117b5101ea4da593ae178ca933b14, type: 3}
       propertyPath: SFX_AudioSources.Array.data[0]
       value: 
-      objectReference: {fileID: 1018581910}
+      objectReference: {fileID: 966227992}
     - target: {fileID: 4768970422599219754, guid: 8a4117b5101ea4da593ae178ca933b14, type: 3}
       propertyPath: SFX_AudioSources.Array.data[1]
       value: 
-      objectReference: {fileID: 966227992}
+      objectReference: {fileID: 1018581910}
     - target: {fileID: 4768970422599219754, guid: 8a4117b5101ea4da593ae178ca933b14, type: 3}
       propertyPath: SFX_AudioSources.Array.data[2]
       value: 

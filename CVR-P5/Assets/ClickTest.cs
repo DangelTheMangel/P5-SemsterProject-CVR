@@ -10,9 +10,9 @@ public class ClickTest : MonoBehaviour
     private void Start()
     {
         pokeFollowAffordance = GetComponent<XRPokeFollowAffordance>();
-       
+        click();
     }
     public void click() {
-        Debug.Log("click");
+        Debug.Log(gameObject.name + " clicked ");
     }
 }

@@ -20,6 +20,9 @@ public class AudioListenerManager : MonoBehaviour
     float hearingRange = 10;
     [SerializeField]
     Color hearingGizmoColor;
+    private string AudiologTag = "AudioLog";
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +46,14 @@ public class AudioListenerManager : MonoBehaviour
                 if (!aSources.enabled) {
                     aSources.enabled = true;
                 }
-                updateAudioSource(aSources);
+                if (aSources.gameObject.tag == AudiologTag)
+                {
+
+                }
+                else {
+                    updateAudioSource(aSources);
+                }
+                
             }
             else if (aSources.enabled) { 
                 aSources.enabled = false;
@@ -59,6 +69,17 @@ public class AudioListenerManager : MonoBehaviour
         musicPlayer.Play();
     }
 
+    void updateAudioLog(AudioSource aS) {
+        AudioLogController alController = aS.gameObject.GetComponent<AudioLogController>();
+        if (alController.isGrabbed) {
+            if (!aS.enabled) { 
+                aS.enabled = true;
+            }
+        }else
+        {
+            updateAudioLog(aS);
+        }
+    }
     void updateAudioSource(AudioSource aS) {
         // Get the direction the player is looking
         Vector3 lookDirection = transform.forward;

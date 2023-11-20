@@ -5,6 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class AudioLogController : MonoBehaviour
 {
     AudioSource audioSource;
+    public bool isGrabbed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +28,9 @@ public class AudioLogController : MonoBehaviour
         else {
             audioSource.Play();
         }
+    }
+
+    public void grabbed() {
+        isGrabbed = !isGrabbed;
     }
 }
