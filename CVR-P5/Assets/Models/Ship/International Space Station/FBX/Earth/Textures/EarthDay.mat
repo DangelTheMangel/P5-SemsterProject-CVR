@@ -8,23 +8,38 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EarthDay
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8d82487c84181094f812dc054bd6f2f5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _EMISSION
-  m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlbedoMapA:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlbedoMapB:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlbedoMapG:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlbedoMapR:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: 163142b49efe57045a5e99bc94d1ad60, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -41,6 +56,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DetailMaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -49,11 +68,39 @@ Material:
         m_Texture: {fileID: 2800000, guid: 163142b49efe57045a5e99bc94d1ad60, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _HeightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 163142b49efe57045a5e99bc94d1ad60, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NightTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: dbd9de8d81aaa9548a0700e01ce931f9, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMapA:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMapB:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMapG:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMapR:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -65,7 +112,31 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SGT_DepthTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SGT_DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SGT_LightingTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SGT_MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SGT_NearTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaterTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -83,33 +154,76 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlbedoShift: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
+    - _BlendOp: 0
     - _BumpScale: 0.84
+    - _CW_DisableFog: 0
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Contrast: 50
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
+    - _DetailFadeBound: 1000
+    - _DetailFadeBound_Ext_1: 1000
+    - _DetailFadeRange: 1000
+    - _DetailFadeRange_Ext_1: 1000
     - _DetailNormalMapScale: 1
+    - _DetailScaleA: 1
+    - _DetailScaleA_Ext_1: 1
+    - _DetailScaleB: 1
+    - _DetailScaleB_Ext_1: 1
+    - _DetailScaleG: 1
+    - _DetailScaleG_Ext_1: 1
+    - _DetailScaleR: 1
+    - _DetailScaleR_Ext_1: 1
+    - _DetailTiling: 10
+    - _DetailTiling_Ext_1: 10
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EmissionScaleUI: 0
     - _EnvironmentReflections: 1
+    - _FlatShadingBlend: 0.9
     - _GlossMapScale: 1
     - _Glossiness: 0.881
     - _GlossyReflections: 1
+    - _HasDetail: 0
+    - _HasDetailA: 0
+    - _HasDetailAlbedo: 0
+    - _HasDetailB: 0
+    - _HasDetailG: 0
+    - _HasDetailNormal: 0
+    - _HasDetailR: 0
+    - _HasDetail_Ext_1: 0
+    - _HasFaceted: 0
+    - _HasNight: 0
+    - _HasWater: 0
     - _Metallic: 0
     - _Mode: 0
+    - _NightBrightness: 1
+    - _NightOffset: 0
+    - _NightSharpness: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _QueueControl: -1
     - _QueueOffset: 0
     - _Range: 5
     - _ReceiveShadows: 1
     - _RimPower: 3.08
+    - _SGT_Anim: 0
+    - _SGT_AnimSpeed: 30
+    - _SGT_Cull: 2
+    - _SGT_Detail: 0
+    - _SGT_DetailStrength: 5
+    - _SGT_DetailTiling: 1
+    - _SGT_Lighting: 0
+    - _SGT_Near: 0
+    - _SGT_NearRangeRecip: 1
+    - _SampleGI: 0
     - _Shininess: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -119,6 +233,11 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _UVSec: 0
+    - _WaterEmission: 0
+    - _WaterMetallic: 0
+    - _WaterSharpness: 10
+    - _WaterSmoothness: 1
+    - _WaterTiling: 10
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
@@ -127,7 +246,9 @@ Material:
     - _ColorTint: {r: 1, g: 1, b: 1, a: 0.9843137}
     - _EmissionColor: {r: 1.1470784, g: 1.1470784, b: 1.1470784, a: 1}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    - _NightDirection: {r: 0, g: 0, b: 1, a: 1}
     - _RimColor: {r: 0, g: 0.54482746, b: 1, a: 1}
+    - _SGT_AmbientColor: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.14705884, g: 0.1221886, b: 0.1221886, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &8004451867260773359
