@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 5523832236766250450}
   - component: {fileID: 583758015235523066}
   m_Layer: 0
-  m_Name: alein (1)
+  m_Name: Alien Swarm Spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
