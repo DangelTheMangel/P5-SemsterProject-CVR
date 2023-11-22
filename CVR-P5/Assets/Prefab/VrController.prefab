@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 2434828773826858163}
   - component: {fileID: 1978578857135210059}
   - component: {fileID: 2549212411014427621}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Right Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1999,6 +1999,10 @@ PrefabInstance:
     - target: {fileID: 8284050841442966291, guid: e51b38c56de819d45bcced45e625925a, type: 3}
       propertyPath: m_Name
       value: hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284050841442966291, guid: e51b38c56de819d45bcced45e625925a, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8772181899415880105, guid: e51b38c56de819d45bcced45e625925a, type: 3}
       propertyPath: m_LocalScale.x
