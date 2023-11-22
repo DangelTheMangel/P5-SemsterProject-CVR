@@ -48,7 +48,7 @@ public class AudioListenerManager : MonoBehaviour
                 }
                 if (aSources.gameObject.tag == AudiologTag)
                 {
-
+                    updateAudioLog(aSources);
                 }
                 else {
                     updateAudioSource(aSources);
@@ -77,7 +77,7 @@ public class AudioListenerManager : MonoBehaviour
             }
         }else
         {
-            updateAudioLog(aS);
+           // updateAudioLog(aS);
         }
     }
     void updateAudioSource(AudioSource aS) {

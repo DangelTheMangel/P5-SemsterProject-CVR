@@ -149,13 +149,15 @@ public class ActionManager : MonoBehaviour
 
     public void runNextActionSequence() {
         if (actionSequenceIndex + 1 <= actionSequences.Length) {
+            Debug.Log("The next sequnce are:  " + (actionSequenceIndex + 1));
             runActionSequence(actionSequenceIndex + 1);
         }
     }
 
-    public void runActionSequence(int index) {
-        ActionSequence aS = actionSequences[index];
-        actionSequenceIndex = index;
+    public void runActionSequence(int i) {
+        ActionSequence aS = actionSequences[i];
+        actionSequenceIndex = i;
         animator.Play(aS.AnimationName);
+        Debug.Log("Playing Action sequnce:  " + i);
     }
 }
