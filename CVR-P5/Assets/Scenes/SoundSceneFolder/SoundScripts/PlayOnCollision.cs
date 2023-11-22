@@ -13,6 +13,7 @@ public class PlayOnCollision : MonoBehaviour
         if (collision.gameObject.tag == "Collider")
         {
             audioSource.PlayOneShot(clip, volume);
+            Debug.Log("Explosion");
         }
 
     }
