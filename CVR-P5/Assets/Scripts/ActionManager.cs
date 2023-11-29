@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Manages a list of actions and controls their execution.
@@ -159,5 +160,9 @@ public class ActionManager : MonoBehaviour
         actionSequenceIndex = i;
         animator.Play(aS.AnimationName);
         Debug.Log("Playing Action sequnce:  " + i);
+    }
+
+    public void restartScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
