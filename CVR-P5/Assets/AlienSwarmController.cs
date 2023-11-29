@@ -12,7 +12,7 @@ public class AlienSwarmController : MonoBehaviour
     [SerializeField]
     GameObject alienPrefab;
     [SerializeField]
-    Transform walkingPostion;
+    Transform SwarmContianer;
     [SerializeField]
     int amount = 20;
 
@@ -26,6 +26,8 @@ public class AlienSwarmController : MonoBehaviour
             SwamPostion sp = swamPostions[index];
             Vector3 pos = sp.randomPostionInsideArea();
             GameObject obj = Instantiate(alienPrefab, pos, Quaternion.identity);
+            if(SwarmContianer != null)
+                obj.transform.parent = SwarmContianer;
             Alien alien = new Alien(obj.GetComponent<NavMeshAgent>(), sp.swamble);
             alien.meshAgent.SetDestination(sp.randomPostionInsideArea());
             alien.index= index;
