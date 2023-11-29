@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
+
 public class PuzzelAction : MonoBehaviour
 {
     [SerializeField]
@@ -16,6 +18,12 @@ public class PuzzelAction : MonoBehaviour
     int max = 3, min = 1;
     [SerializeField]
     public bool gotCode = false;
+    [SerializeField]
+    CapsuleCollider capsuleCollider;
+    [SerializeField]
+    GameObject[] iceParts;
+    [SerializeField]
+    XRGrabInteractable grab;
     public void pressButton(int index) {
         if (gotCode) {
             return;
@@ -32,9 +40,16 @@ public class PuzzelAction : MonoBehaviour
             gotCode = true;
             codePart.SetActive(false);
             finnishPar.SetActive(true);
+            activate();
         }
     }
-    
 
+    public void activate() {
+        capsuleCollider.enabled = true;
+        grab.enabled = true;
+        for (int i = 0; i < iceParts.Length; i++) {
+            iceParts[i].SetActive(false);
+        }
+    }
 
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,6 +27,11 @@ public class ActionManager : MonoBehaviour
     [SerializeField]
     Animator animator;
 
+    [Header("EndningChecks")]
+    [SerializeField]
+    GameObject alienArtifact,BlackHole;
+    [SerializeField]
+    float distanceToHole = 100;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -163,6 +169,12 @@ public class ActionManager : MonoBehaviour
     }
 
     public void restartScene() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        int index = SceneManager.GetActiveScene().buildIndex;
+        if (alienArtifact != null && BlackHole != null) {
+            if (Vector3.Distance(alienArtifact.transform.position, BlackHole.transform.position) <= distanceToHole) {
+                index += 1;
+            }
+        }
+        SceneManager.LoadScene(index);
     }
 }
