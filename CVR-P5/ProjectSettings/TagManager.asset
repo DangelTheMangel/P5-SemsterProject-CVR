@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collider
   - Flashlight
+  - AudioLog
   layers:
   - Default
   - TransparentFX

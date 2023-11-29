@@ -100,7 +100,10 @@ public class Alien{
         transform = meshAgent.gameObject.transform;
     }
     public bool newPostionNeed() {
-        return (meshAgent.remainingDistance <= distanceForNextPoint);
+        if (meshAgent != null)
+            return (meshAgent.remainingDistance <= distanceForNextPoint);
+        else
+            return false;
     }
 
     //inspried by https://forum.unity.com/threads/how-do-i-update-the-rotation-of-a-navmeshagent.707579/

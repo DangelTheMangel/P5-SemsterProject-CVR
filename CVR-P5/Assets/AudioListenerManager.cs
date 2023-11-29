@@ -46,12 +46,15 @@ public class AudioListenerManager : MonoBehaviour
                 if (!aSources.enabled) {
                     aSources.enabled = true;
                 }
+                Debug.Log("tag: " + aSources.gameObject.tag + " saved tag: " + AudiologTag);
                 if (aSources.gameObject.tag == AudiologTag)
                 {
                     updateAudioLog(aSources);
+                    
                 }
                 else {
                     updateAudioSource(aSources);
+                   
                 }
                 
             }
@@ -77,7 +80,7 @@ public class AudioListenerManager : MonoBehaviour
             }
         }else
         {
-           // updateAudioLog(aS);
+            updateAudioSource(aS);
         }
     }
     void updateAudioSource(AudioSource aS) {

@@ -6,6 +6,8 @@ public class AudioLogController : MonoBehaviour
 {
     AudioSource audioSource;
     public bool isGrabbed = false;
+    public bool canPress = false;
+    float canpressTimer = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +23,20 @@ public class AudioLogController : MonoBehaviour
     }
 
     void clickOnAL(ActivateEventArgs activateEventArgs) {
-        if (audioSource.isPlaying)
-        {
-            audioSource.Stop();
+        if (canPress) { 
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+            else {
+                audioSource.Play();
+            }
         }
-        else {
-            audioSource.Play();
-        }
+        
     }
 
     public void grabbed() {
         isGrabbed = !isGrabbed;
     }
+
 }
