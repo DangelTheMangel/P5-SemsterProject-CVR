@@ -40,13 +40,11 @@ public class AudioListenerManager : MonoBehaviour
         {
             Transform tf = aSources.transform;
             float dist = Vector3.Distance(transform.position, tf.position);
-            Debug.Log("distance: " + dist + " hearingRange: " + hearingRange);
             if (dist <= hearingRange)
             {
                 if (!aSources.enabled) {
                     aSources.enabled = true;
                 }
-                Debug.Log("tag: " + aSources.gameObject.tag + " saved tag: " + AudiologTag);
                 if (aSources.gameObject.tag == AudiologTag)
                 {
                     updateAudioLog(aSources);
@@ -92,7 +90,6 @@ public class AudioListenerManager : MonoBehaviour
 
         // Calculate angle between look direction and toObject direction
         float angle = Vector3.Angle(lookDirection, toObject);
-        Debug.Log(aS.name + " angle: " + angle);
         // Map the angle to the audio volume (angle 0 means maxVolume, angle >= angleToMaxVolume means volume 0)
         aS.volume = Mathf.Lerp(maxVolume, 0, angle / angleToMaxVolume);
     }
