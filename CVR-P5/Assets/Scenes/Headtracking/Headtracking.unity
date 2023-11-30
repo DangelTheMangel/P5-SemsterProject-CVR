@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.17974785, g: 0.22506359, b: 0.30656707, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -381,13 +381,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251235568}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -9, y: 3, z: 0}
+  m_LocalRotation: {x: 0.8351204, y: -0.2550158, z: -0.044208497, w: 0.48537263}
+  m_LocalPosition: {x: -9, y: 15.04, z: 7.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 52.012, y: -148.522, z: -130.381}
 --- !u!114 &251235571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2294,6 +2294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sallys room
       objectReference: {fileID: 0}
+    - target: {fileID: 4572232712529342862, guid: 2a12a482554a69d47bd0405dd46054cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6403316585748665955, guid: 2a12a482554a69d47bd0405dd46054cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.946
@@ -3216,10 +3220,6 @@ PrefabInstance:
     - target: {fileID: 7283037488690532423, guid: 191fe0dfd34323946bd0d435f50e372e, type: 3}
       propertyPath: m_Name
       value: Oberservation deck
-      objectReference: {fileID: 0}
-    - target: {fileID: 7283037488690532423, guid: 191fe0dfd34323946bd0d435f50e372e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8030167205629519320, guid: 191fe0dfd34323946bd0d435f50e372e, type: 3}
       propertyPath: m_LocalPosition.x
