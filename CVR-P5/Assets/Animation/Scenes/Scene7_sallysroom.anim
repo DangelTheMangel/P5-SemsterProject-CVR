@@ -98,15 +98,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 17.466667
         value: {x: 29.445, y: -0.836, z: 0.003}
-        inSlope: {x: -0.6530906, y: 0, z: 0.0038385822}
-        outSlope: {x: -0.6530906, y: 0, z: 0.0038385822}
+        inSlope: {x: -0.725282, y: 0, z: 0.003857567}
+        outSlope: {x: -0.725282, y: 0, z: 0.003857567}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 24.866667
-        value: {x: 22.3, y: -0.836, z: 0.047}
+        time: 24.783333
+        value: {x: 21.138, y: -0.836, z: 0.047}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -1364,15 +1364,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 17.466667
         value: 29.445
-        inSlope: -0.6530906
-        outSlope: -0.6530906
+        inSlope: -0.725282
+        outSlope: -0.725282
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 24.866667
-        value: 22.3
+        time: 24.783333
+        value: 21.138
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1437,7 +1437,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 24.866667
+        time: 24.783333
         value: -0.836
         inSlope: 0
         outSlope: 0
@@ -1496,14 +1496,14 @@ AnimationClip:
       - serializedVersion: 3
         time: 17.466667
         value: 0.003
-        inSlope: 0.0038385822
-        outSlope: 0.0038385822
+        inSlope: 0.003857567
+        outSlope: 0.003857567
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 24.866667
+        time: 24.783333
         value: 0.047
         inSlope: 0
         outSlope: 0
