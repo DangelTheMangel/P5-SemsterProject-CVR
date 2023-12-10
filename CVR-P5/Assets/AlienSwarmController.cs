@@ -25,14 +25,21 @@ public class AlienSwarmController : MonoBehaviour
         {
             addAliens();
         }
-        else { 
-            
+        else {
+            addAliensFromChild();
         }
     }
     void addAliensFromChild() {
         foreach (Transform child in SwarmContianer)
         {
-            Something(child.gameObject);
+            int index = UnityEngine.Random.Range(0, swamPostions.Length);
+            SwamPostion sp = swamPostions[index];
+            Vector3 pos = child.position;
+            GameObject obj = child.gameObject;
+            Alien alien = new Alien(obj.GetComponent<NavMeshAgent>(), sp.swamble);
+            alien.meshAgent.SetDestination(sp.randomPostionInsideArea());
+            alien.index = index;
+            aliens.Add(alien);
         }
     }
 
