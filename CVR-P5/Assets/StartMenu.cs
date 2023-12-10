@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
+    [SerializeField]
+    AsyncSceneManager async;
     public void starExperinces() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        async.StartMiniGameLoading(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

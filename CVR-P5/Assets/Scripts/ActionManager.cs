@@ -33,6 +33,10 @@ public class ActionManager : MonoBehaviour
     [SerializeField]
     float distanceToHole = 100;
     bool experinceStarted = false;
+    [Header("Loadning screen")]
+    [SerializeField]
+    AsyncSceneManager asyncm;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -183,6 +187,10 @@ public class ActionManager : MonoBehaviour
                 index += 1;
             }
         }
-        SceneManager.LoadScene(index);
+        if (asyncm != null) {
+            asyncm.StartMiniGameLoading(index);
+        }
+        else
+            SceneManager.LoadScene(index);
     }
 }
