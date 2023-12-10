@@ -21,16 +21,33 @@ public class AlienSwarmController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < amount; i++) {
+        if (SwarmContianer.childCount <= 0)
+        {
+            addAliens();
+        }
+        else { 
+            
+        }
+    }
+    void addAliensFromChild() {
+        foreach (Transform child in SwarmContianer)
+        {
+            Something(child.gameObject);
+        }
+    }
+
+    void addAliens() {
+        for (int i = 0; i < amount; i++)
+        {
             int index = UnityEngine.Random.Range(0, swamPostions.Length);
             SwamPostion sp = swamPostions[index];
             Vector3 pos = sp.randomPostionInsideArea();
             GameObject obj = Instantiate(alienPrefab, pos, Quaternion.identity);
-            if(SwarmContianer != null)
+            if (SwarmContianer != null)
                 obj.transform.parent = SwarmContianer;
             Alien alien = new Alien(obj.GetComponent<NavMeshAgent>(), sp.swamble);
             alien.meshAgent.SetDestination(sp.randomPostionInsideArea());
-            alien.index= index;
+            alien.index = index;
             aliens.Add(alien);
 
         }
