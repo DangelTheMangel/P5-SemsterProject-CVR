@@ -32,6 +32,7 @@ public class ActionManager : MonoBehaviour
     GameObject alienArtifact,BlackHole;
     [SerializeField]
     float distanceToHole = 100;
+    bool experinceStarted = false;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -45,6 +46,13 @@ public class ActionManager : MonoBehaviour
         if (currentActionIndex >= 0 && actionsActive)
         {
             getCurrentAction().actionUpdate();
+        }
+    }
+
+    public void startExperinces() {
+        if (!experinceStarted) {
+            experinceStarted = true;
+            runNextActionSequence();
         }
     }
 
