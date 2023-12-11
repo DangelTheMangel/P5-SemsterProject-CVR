@@ -18,6 +18,7 @@ public class PuzzelAction : MonoBehaviour
     int max = 3, min = 1;
     [SerializeField]
     public bool gotCode = false;
+    bool[] ispressed = { false, false, false };
     [SerializeField]
     CapsuleCollider capsuleCollider;
     [SerializeField]
@@ -25,23 +26,35 @@ public class PuzzelAction : MonoBehaviour
     [SerializeField]
     XRGrabInteractable grab;
     public void pressButton(int index) {
-        if (gotCode) {
+        ispressed[index] = true;
+    }
+
+    public void exitPressButton(int index)
+    {
+        if (gotCode)
+        {
             return;
         }
-            
-        digigts[index] += 1;
-        if (digigts[index] > max) {
-            digigts[index] = min;
+        else if (ispressed[index]) { 
+             digigts[index] += 1;
+            if (digigts[index] > max)
+            {
+                digigts[index] = min;
+            }
+            screenDigigts[index].text = digigts[index].ToString();
+            string currentCode = digigts[0].ToString() + digigts[1].ToString() + digigts[2].ToString();
+            Debug.Log(currentCode + " == " + code.ToString() + "[" + (currentCode == code.ToString()) + "]");
+            if (currentCode == code.ToString())
+            {
+                gotCode = true;
+                codePart.SetActive(false);
+                finnishPar.SetActive(true);
+                activate();
+            }
+            ispressed[index] = false;
         }
-        screenDigigts[index].text = digigts[index].ToString();
-        string currentCode = digigts[0].ToString() + digigts[1].ToString() + digigts[2].ToString();
-        Debug.Log(currentCode  + " == " + code.ToString() + "["+(currentCode == code.ToString()) +"]");
-        if (currentCode == code.ToString()) {
-            gotCode = true;
-            codePart.SetActive(false);
-            finnishPar.SetActive(true);
-            activate();
-        }
+
+       
     }
 
     public void activate() {
