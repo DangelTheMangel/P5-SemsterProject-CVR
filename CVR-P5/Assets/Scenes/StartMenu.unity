@@ -73429,6 +73429,7 @@ GameObject:
   - component: {fileID: 5459477725208321180}
   - component: {fileID: 7793199162692200535}
   - component: {fileID: 7793199162692200536}
+  - component: {fileID: 7793199162692200537}
   m_Layer: 0
   m_Name: Transition circles
   m_TagString: Untagged
@@ -88081,7 +88082,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e3f5fd02e7c0440a612a996397d00d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  async: {fileID: 0}
+  async: {fileID: 7793199162692200537}
+--- !u!114 &7793199162692200537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5819506554962754889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe34ba9b2503744ebf811adbf7c6914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingScreenObject: {fileID: 1839370334}
+  loadingProgressBar: {fileID: 1427391767}
 --- !u!4 &7813590616341106732
 Transform:
   m_ObjectHideFlags: 0
