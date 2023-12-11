@@ -22,12 +22,12 @@ public class AlienSwarmController : MonoBehaviour
     void Start()
     {
         if (SwarmContianer.childCount <= 0)
-        {
-            addAliens();
-        }
-        else {
-            addAliensFromChild();
-        }
+          {
+              addAliens();
+          }
+          else {
+              addAliensFromChild();
+          }
     }
     void addAliensFromChild() {
         foreach (Transform child in SwarmContianer)
@@ -36,7 +36,11 @@ public class AlienSwarmController : MonoBehaviour
             SwamPostion sp = swamPostions[index];
             Vector3 pos = child.position;
             GameObject obj = child.gameObject;
-            Alien alien = new Alien(obj.GetComponent<NavMeshAgent>(), sp.swamble);
+            NavMeshAgent navMeshAgent = obj.GetComponent<NavMeshAgent>();
+            if (navMeshAgent == null) {
+                navMeshAgent =  obj.AddComponent<NavMeshAgent>();
+            }
+            Alien alien = new Alien(navMeshAgent, sp.swamble);
             alien.meshAgent.SetDestination(sp.randomPostionInsideArea());
             alien.index = index;
             aliens.Add(alien);
