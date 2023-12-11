@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /// <summary>
 /// Manages a list of actions and controls their execution.
@@ -36,6 +37,9 @@ public class ActionManager : MonoBehaviour
     [Header("Loadning screen")]
     [SerializeField]
     AsyncSceneManager asyncm;
+    [Header("Sound")]
+    [SerializeField]
+    AudioListenerManager audioListenerManager;
 
     private void Start()
     {
@@ -193,5 +197,25 @@ public class ActionManager : MonoBehaviour
         }
         else
             SceneManager.LoadScene(index);
+    }
+
+    public void playSfxSound(int i) {
+        audioListenerManager.playMusic(i);
+    }
+    public void playSfxSoundWithFadeIn(int i)
+    {
+        audioListenerManager.playMusic(i);
+    }
+
+    public void stopMusicWithFade(int i) {
+        audioListenerManager.stopMusicFadeOut();
+    }
+
+    public void playSoundEffect(int i) {
+        audioListenerManager.playSFX(i);
+    }
+    public void stopSoundEffect(int i)
+    {
+        audioListenerManager.stopSFX(i);
     }
 }
