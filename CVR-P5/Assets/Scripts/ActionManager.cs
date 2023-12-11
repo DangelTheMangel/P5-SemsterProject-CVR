@@ -182,6 +182,7 @@ public class ActionManager : MonoBehaviour
 
     public void restartScene() {
         int index = SceneManager.GetActiveScene().buildIndex;
+        Debug.Log("Distance to hole: " + Vector3.Distance(alienArtifact.transform.position, BlackHole.transform.position) + " the need distance to hole " + distanceToHole + " is this true: " + (Vector3.Distance(alienArtifact.transform.position, BlackHole.transform.position) <= distanceToHole));
         if (alienArtifact != null && BlackHole != null) {
             if (Vector3.Distance(alienArtifact.transform.position, BlackHole.transform.position) <= distanceToHole) {
                 index += 1;
