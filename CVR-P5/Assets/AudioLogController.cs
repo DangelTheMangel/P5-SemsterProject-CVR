@@ -13,6 +13,10 @@ public class AudioLogController : MonoBehaviour
     AudioClip idealSound;
     [SerializeField]
     bool isplaying = false;
+    AudioLowPassFilter lowpassfilter;
+    AudioHighPassFilter highPassFilter;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +24,19 @@ public class AudioLogController : MonoBehaviour
         xrGrab.activated.AddListener(clickOnAL);
         audioSource = GetComponent<AudioSource>();
         idealSound = audioSource.clip;
+        lowpassfilter= GetComponent<AudioLowPassFilter>();
+        highPassFilter= GetComponent<AudioHighPassFilter>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void updateFilters(bool enable) {
+        if (lowpassfilter != null) {
+            lowpassfilter.enabled = enable;
+        }
+
+        if (highPassFilter != null) {
+            highPassFilter.enabled = enable;
+        }
+    
     }
 
     void clickOnAL(ActivateEventArgs activateEventArgs) {
@@ -35,11 +46,13 @@ public class AudioLogController : MonoBehaviour
                 audioSource.clip = idealSound;
                 audioSource.Play();
                 isplaying = false;
+                updateFilters(true);
             }
             else {
                 audioSource.clip = audiolog;
                 audioSource.Play();
                 isplaying = true;
+                updateFilters(false);
             }
         }
         
