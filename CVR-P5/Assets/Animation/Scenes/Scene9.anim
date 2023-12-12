@@ -16304,6 +16304,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 3
     messageOptions: 0
+  - time: 23.966667
+    functionName: playSfxSound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 8
+    messageOptions: 0
   - time: 40.033333
     functionName: restartScene
     data: 
