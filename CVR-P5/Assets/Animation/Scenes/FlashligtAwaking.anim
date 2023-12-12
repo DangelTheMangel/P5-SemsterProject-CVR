@@ -1324,6 +1324,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
+    functionName: stopMusicWithFade
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 9
+    messageOptions: 0
+  - time: 0.11666667
     functionName: playSfxSound
     data: 
     objectReferenceParameter: {fileID: 0}

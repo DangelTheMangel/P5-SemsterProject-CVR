@@ -25,6 +25,8 @@ public class PuzzelAction : MonoBehaviour
     GameObject[] iceParts;
     [SerializeField]
     XRGrabInteractable grab;
+    [SerializeField]
+    AudioSource music;
     public void pressButton(int index) {
         ispressed[index] = true;
     }
@@ -62,6 +64,9 @@ public class PuzzelAction : MonoBehaviour
         grab.enabled = true;
         for (int i = 0; i < iceParts.Length; i++) {
             iceParts[i].SetActive(false);
+        }
+        if (music != null) {
+            music.Play();
         }
     }
 
