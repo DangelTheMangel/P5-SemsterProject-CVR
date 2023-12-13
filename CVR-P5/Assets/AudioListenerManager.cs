@@ -27,6 +27,11 @@ public class AudioListenerManager : MonoBehaviour
     void Start()
     {
         musicPlayer= GetComponent<AudioSource>();
+        foreach (AudioSource aSources in SFX_AudioSources) {
+            if (aSources == null)
+                continue;
+            aSources.enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -38,6 +43,8 @@ public class AudioListenerManager : MonoBehaviour
     void updateAudioSources() {
         foreach (AudioSource aSources in SFX_AudioSources)
         {
+            if (aSources == null)
+                continue;
             Transform tf = aSources.transform;
             float dist = Vector3.Distance(transform.position, tf.position);
             if (dist <= hearingRange)
