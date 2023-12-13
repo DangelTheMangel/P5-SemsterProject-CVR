@@ -4752,7 +4752,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 94.51667
+    m_StopTime: 92.78333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -13726,7 +13726,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch (2)
+    path: Mise en scene/ISS_Interior_USOnly/OuterShield.002 (1)
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -13738,7 +13738,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch (2)
+    path: Mise en scene/ISS_Interior_USOnly/OuterShield.002 (1)
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -13750,7 +13750,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch (2)
+    path: Mise en scene/ISS_Interior_USOnly/OuterShield.002 (1)
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -13762,7 +13762,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Oberservation deck/Outside/monsterbigshitting/Legs/Right
+    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch.004 (1)
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -13774,7 +13774,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Oberservation deck/Outside/monsterbigshitting/Legs/Right
+    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch.004 (1)
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -13786,7 +13786,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Oberservation deck/Outside/monsterbigshitting/Legs/Right
+    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch.004 (1)
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -13834,7 +13834,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Mise en scene/ISS_Interior_USOnly/OuterShield.002 (1)
+    path: Oberservation deck/Outside/monsterbigshitting/Monster_head/eyeball
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -13846,7 +13846,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Mise en scene/ISS_Interior_USOnly/OuterShield.002 (1)
+    path: Oberservation deck/Outside/monsterbigshitting/Monster_head/eyeball
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -13858,7 +13858,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Mise en scene/ISS_Interior_USOnly/OuterShield.002 (1)
+    path: Oberservation deck/Outside/monsterbigshitting/Monster_head/eyeball
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -14050,7 +14050,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch.004 (1)
+    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch (2)
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -14062,7 +14062,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch.004 (1)
+    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch (2)
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -14074,7 +14074,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch.004 (1)
+    path: Mise en scene/ISS_Interior_USOnly/OuterShield_OneHatch (2)
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -14446,7 +14446,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Oberservation deck/Outside/monsterbigshitting/Monster_head/eyeball
+    path: Oberservation deck/Outside/monsterbigshitting/Legs/Right
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -14458,7 +14458,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Oberservation deck/Outside/monsterbigshitting/Monster_head/eyeball
+    path: Oberservation deck/Outside/monsterbigshitting/Legs/Right
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -14470,7 +14470,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Oberservation deck/Outside/monsterbigshitting/Monster_head/eyeball
+    path: Oberservation deck/Outside/monsterbigshitting/Legs/Right
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -14498,7 +14498,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 17
     messageOptions: 0
-  - time: 94.51667
+  - time: 78.7
     functionName: runActionSequence
     data: 
     objectReferenceParameter: {fileID: 0}
