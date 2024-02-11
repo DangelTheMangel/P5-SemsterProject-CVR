@@ -16751,6 +16751,20 @@ AnimationClip:
     floatParameter: 0
     intParameter: 16
     messageOptions: 0
+  - time: 6.866667
+    functionName: grabScreenShot
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 13.433333
+    functionName: grabScreenShot
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 17.933332
     functionName: stopMusicWithFade
     data: 
@@ -16764,6 +16778,13 @@ AnimationClip:
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 8
+    messageOptions: 0
+  - time: 26.433332
+    functionName: grabScreenShot
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
     messageOptions: 0
   - time: 32.2
     functionName: runNextActionSequence

@@ -1736,6 +1736,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 21
     messageOptions: 0
+  - time: 1.7
+    functionName: grabScreenShot
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 4.0833335
     functionName: runNextActionSequence
     data: 

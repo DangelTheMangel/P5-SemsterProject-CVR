@@ -14851,6 +14851,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 4
     messageOptions: 0
+  - time: 12.716666
+    functionName: grabScreenShot
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 24.083334
     functionName: playSfxSound
     data: 
@@ -14858,12 +14865,26 @@ AnimationClip:
     floatParameter: 0
     intParameter: 7
     messageOptions: 0
+  - time: 44.183334
+    functionName: grabScreenShot
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 50.55
     functionName: playSoundEffect
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 17
+    messageOptions: 0
+  - time: 67.26667
+    functionName: grabScreenShot
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
     messageOptions: 0
   - time: 81.03333
     functionName: runActionSequence

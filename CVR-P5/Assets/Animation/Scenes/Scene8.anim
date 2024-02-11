@@ -7768,6 +7768,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 3
     messageOptions: 0
+  - time: 14.533334
+    functionName: grabScreenShot
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 16.516666
     functionName: playSfxSound
     data: 
