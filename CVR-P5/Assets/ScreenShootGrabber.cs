@@ -38,8 +38,8 @@ public class ScreenShootGrabber : MonoBehaviour
         string currentFrame = imagepath+ "/" + indexFrame + "pic" + ".png";
         ScreenCapture.CaptureScreenshot(currentFrame);
         framesLocation[indexFrame] = currentFrame;
+        indexFrame++;
     }
-
 
     void showNewImage(int i) {
         Texture2D thisTexture = new Texture2D(texWidth, textHeight); 
