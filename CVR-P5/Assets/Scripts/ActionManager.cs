@@ -218,4 +218,11 @@ public class ActionManager : MonoBehaviour
     {
         audioListenerManager.stopSFX(i);
     }
+    bool have_activatede = false;
+    public void runNextScene1Time(int i) {
+        if (!have_activatede) {
+            runActionSequence(i);
+            have_activatede = true;
+        }
+    }
 }
