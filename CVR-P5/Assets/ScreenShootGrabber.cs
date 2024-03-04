@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -42,12 +43,21 @@ public class ScreenShootGrabber : MonoBehaviour
     }
 
     void showNewImage(int i) {
+        Debug.ClearDeveloperConsole();
         Texture2D thisTexture = new Texture2D(texWidth, textHeight); 
         string fileName = framesLocation[i];
-        byte[] bytes = File.ReadAllBytes(fileName);
-        thisTexture.LoadImage(bytes);
-        thisTexture.name = fileName;
-        imageFrames.texture = thisTexture;
+        Debug.Log("looking at image: " + fileName);
+        try
+        {
+            byte[] bytes = File.ReadAllBytes(fileName);
+            thisTexture.LoadImage(bytes);
+            thisTexture.name = fileName;
+            imageFrames.texture = thisTexture;
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e);
+        }
         Debug.Log("loadning image: " + fileName);
     }
 
